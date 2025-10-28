@@ -1,4 +1,5 @@
-# The Griffins 
+# The Griffins By Kinyera Alvine IUEA STUDENT BIT 
+# REG 24/UG/419/BIT-J
 
 A modern, responsive e-commerce product display page built using HTML, CSS (for styling/layout), and Vanilla JavaScript (for dynamic slider and product listings).
 
