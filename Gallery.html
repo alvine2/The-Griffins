@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+
+  <!-- Gallery Stylesheet -->
+  <link rel="stylesheet" href="/css/Gallery.css">
+
+  <!-- Shared Header/Footer Assets -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- Main Site CSS -->
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <!-- mobile menu -->
+    <div class="mobile-menu bg-second">
+      <a href="#" class="mb-logo">The Griffins</a>
+      <span class="mb-menu-toggle" id="mb-menu-toggle">
+        <i class='bx bx-menu'></i>
+      </span>
+    </div>
+
+    <div class="header-wrapper" id="header-wrapper">
+      <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+        <i class='bx bx-x'></i>
+      </span>
+
+      <!-- top header -->
+      <div class="bg-second">
+        <div class="top-header container">
+          <ul class="devided">
+            <li><a href="#">+256778235910</a></li>
+            <li><a href="#">alvinekinyera@gmail.com</a></li>
+          </ul>
+          <ul class="devided">
+            <li class="dropdown">
+              <a href="">UGX</a>
+              <i class='bx bxs-chevron-down'></i>
+              <ul class="dropdown-content">
+                <li><a href="#">KES</a></li>
+                <li><a href="#">USD</a></li>
+                <li><a href="#">EUR</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="">ENGLISH</a>
+              <i class='bx bxs-chevron-down'></i>
+              <ul class="dropdown-content">
+                <li><a href="#">ACHOLI</a></li>
+                <li><a href="#">LUGANDA</a></li>
+                <li><a href="#">KISWAHILI</a></li>
+                <li><a href="#">FRENCH</a></li>
+              </ul>
+            </li>
+            <li><a href="#">ORDER TRACKING</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- mid header -->
+      <div class="bg-main">
+        <div class="mid-header container">
+          <a href="#" class="logo">The Griffins</a>
+          <div class="search">
+            <input type="text" placeholder="Search">
+            <i class='bx bx-search-alt'></i>
+          </div>
+          <div class="bg-icon">
+            <ul class="user-menu">
+              <li><a href="#"><i class='bx bx-bell'></i></a></li>
+              <li><a href="login.html"><i class='bx bx-user-circle'></i></a></li>
+              <li><a href="cartpage.html"><i class='bx bx-cart'></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom header -->
+      <div class="bg-second">
+        <div class="bottom-header container">
+          <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="mega-dropdown">
+              <a href="products.html">Shop<i class='bx bxs-chevron-down'></i></a>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="Gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- main content -->
+  <main>
+    <div class="headerText">
+      <h1>Our Store</h1>
+    </div>
+
+    <div class="fullImageClass" id="fullImageBox">
+      <img src="" alt="" id="fullImage">
+      <span id="crossIcon">X</span>
+    </div>
+
+    <div class="imageGallery">
+      <img src="images/sound.jpg" alt="1" onclick="openFullImage(this.src)">
+      <img src="images/iphone.jpg" alt="2" onclick="openFullImage(this.src)">
+      <img src="images/tvs.jpg" alt="3" onclick="openFullImage(this.src)">
+      <img src="images/washing.jpg" alt="4" onclick="openFullImage(this.src)">
+      <img src="images/hap.jpg" alt="5" onclick="openFullImage(this.src)">
+      <img src="images/mac.jpg" alt="6" onclick="openFullImage(this.src)">
+      <img src="images/macAir.png" alt="7" onclick="openFullImage(this.src)">
+      <img src="images/refrigerator.jpg" alt="8" onclick="openFullImage(this.src)">
+      <img src="images/ip14-2.png" alt="9" onclick="openFullImage(this.src)">
+    </div>
+  </main>
+  <!-- end main content -->
+
+  <!-- footer -->
+  <footer class="bg-second" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 col-md-6">
+          <h3 class="footer-head">Products</h3>
+          <ul class="menu">
+            <li><a href="#">Website Builder</a></li>
+            <li><a href="#">Online store</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Shop Pay</a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-md-6">
+          <h3 class="footer-head">General Policy</h3>
+          <ul class="menu">
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Warranty Policy</a></li>
+            <li><a href="#">Business Policy</a></li>
+            <li><a href="#">Checking Policy</a></li>
+            <li><a href="#">Customer Info Security</a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-md-6">
+          <h3 class="footer-head">Support</h3>
+          <ul class="menu">
+            <li><a href="#">24/7 Support</a></li>
+            <li><a href="#">Shopping Guide</a></li>
+            <li><a href="#">Payment Guide</a></li>
+            <li><a href="#">Installment Purchase</a></li>
+            <li><a href="#">Print e-Invoices</a></li>
+            <li><a href="#">Warranty Lookup</a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-md-6 col-sm-12">
+          <div class="contact">
+            <h3 class="contact-header">The Griffins</h3>
+            <ul class="contact-socials">
+              <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+              <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+              <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+              <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+            </ul>
+          </div>
+          <div class="subscribe">
+            <input type="email" placeholder="ENTER YOUR EMAIL">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>alvinekinyera © 2025 The Griffins. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <!-- scripts -->
+  <script src="./js/app.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="/js/Gallery.js"></script>
+
+</body>
+</html>

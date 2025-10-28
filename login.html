@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/login.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <div action="#">
+            <h2>Login</h2>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required id="email" />
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" required id="password" />
+              <label for="">Password</label>
+            </div>
+            <div class="forget">
+              <label for=""
+                ><input type="checkbox" />Remember Me
+                <a href="#">Forget Password</a></label>
+            </div>
+            <button id="login">Log in</button>
+            <div class="register">
+              <p>Don't have a account <a href="#">Register</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const login = document.querySelector("#login");
+      const email = document.querySelector("#email");
+      const password = document.querySelector("#password");
+
+      login.addEventListener("click", () => {
+        if (email.value !== "alvinekinyera@gmail.com" || password.value !== "123") {
+          alert("Sucessfull!");
+        } else {
+          alert("failed!");
+          window.location.href="./admin.html"
+        }
+      });
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
